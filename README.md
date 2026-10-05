@@ -32,9 +32,9 @@ Prices are DigitalOcean's published per-token prices, recorded with their source
 
 ## What it found
 
-- A one-word alert label used a median of 566 reasoning tokens on Kimi K2.6 (up to 1,590) and 184 on DeepSeek V4.1 Flash (up to 1,783). One label cost 32 to 48 percent of a full incident investigation.
-- With `reasoning_effort: "none"`, Kimi K2.6 produced 2 output tokens per label and cost 63 times less per 1,000 labels. It also changed 6 of 20 labels.
-- The agent loop was not the multiplier we expected: both models asked for all four tools in one step, so every investigation was two calls.
+- A one-word alert label used a median of 566 reasoning tokens on Kimi K2.6 (up to 1,590) and 184 on DeepSeek V4.1 Flash (up to 1,783). On mean costs, one label cost 32 to 48 percent of a full incident investigation.
+- With `reasoning_effort: "none"`, Kimi K2.6 produced 2 output tokens per label and cost 41 times less per 1,000 labels at list price. It also changed 6 of 20 labels.
+- The agent loop was not the multiplier we expected: in 19 of 20 investigations the model asked for all four tools in one step, so it took two calls.
 - The same prompt used 551 to 1,652 reasoning tokens across ten runs. Per-request cost is a distribution, not a number.
 
 The write-up, with what we could not conclude: [Knowing what your AI feature costs before finance does](https://devops-daily.com/posts/ai-feature-cost-before-finance-does).

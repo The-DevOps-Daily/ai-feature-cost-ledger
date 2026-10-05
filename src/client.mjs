@@ -18,7 +18,8 @@ export async function chat(body, { attempt = 1, maxAttempts = 6 } = {}) {
       body: JSON.stringify(body),
     });
   } catch (err) {
-    // Network failure before any response: nothing reached the model.
+    // No response arrived. The request may or may not have reached the
+    // provider, so a retry here can be a second billed call.
     if (attempt >= maxAttempts + 6) throw err;
     await new Promise((r) => setTimeout(r, Math.min(60000, 5000 * attempt)));
     const out = await chat(body, { attempt: attempt + 1, maxAttempts });
