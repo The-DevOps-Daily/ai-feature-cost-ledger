@@ -1,0 +1,158 @@
+[
+  {
+    "model": "deepseek-v4.1-flash",
+    "variant": "default",
+    "status": 200,
+    "usage": {
+      "cache_created_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_read_input_tokens": 64,
+      "completion_tokens": 976,
+      "completion_tokens_details": {
+        "reasoning_tokens": 972
+      },
+      "prompt_tokens": 87,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "speed": null,
+      "total_tokens": 1063
+    },
+    "label": "ticket"
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "variant": "reasoning_effort=low",
+    "status": 200,
+    "usage": {
+      "cache_created_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_read_input_tokens": 64,
+      "completion_tokens": 304,
+      "completion_tokens_details": {
+        "reasoning_tokens": 300
+      },
+      "prompt_tokens": 87,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "speed": null,
+      "total_tokens": 391
+    },
+    "label": "ticket"
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "variant": "reasoning_effort=minimal",
+    "status": 400,
+    "error": "reasoning_effort must be one of [low high xhigh max] for this model"
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "variant": "reasoning_effort=none",
+    "status": 400,
+    "error": "reasoning_effort must be one of [low high xhigh max] for this model"
+  },
+  {
+    "model": "kimi-k2.6",
+    "variant": "default",
+    "status": 200,
+    "usage": {
+      "cache_created_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_read_input_tokens": 64,
+      "completion_tokens": 659,
+      "completion_tokens_details": {
+        "reasoning_tokens": 656
+      },
+      "prompt_tokens": 67,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "speed": null,
+      "total_tokens": 726
+    },
+    "label": " ticket"
+  },
+  {
+    "model": "kimi-k2.6",
+    "variant": "reasoning_effort=low",
+    "status": 200,
+    "usage": {
+      "cache_created_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_read_input_tokens": 64,
+      "completion_tokens": 1213,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1210
+      },
+      "prompt_tokens": 67,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "speed": null,
+      "total_tokens": 1280
+    },
+    "label": " page"
+  },
+  {
+    "model": "kimi-k2.6",
+    "variant": "reasoning_effort=minimal",
+    "status": 200,
+    "usage": {
+      "cache_created_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_read_input_tokens": 32,
+      "completion_tokens": 1024,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1021
+      },
+      "prompt_tokens": 67,
+      "prompt_tokens_details": {
+        "cached_tokens": 32
+      },
+      "speed": null,
+      "total_tokens": 1091
+    },
+    "label": " ticket"
+  },
+  {
+    "model": "kimi-k2.6",
+    "variant": "reasoning_effort=none",
+    "status": 200,
+    "usage": {
+      "cache_created_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_read_input_tokens": 64,
+      "completion_tokens": 2,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 68,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "speed": null,
+      "total_tokens": 70
+    },
+    "label": " ticket"
+  }
+]

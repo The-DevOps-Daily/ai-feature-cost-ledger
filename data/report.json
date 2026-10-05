@@ -1,0 +1,261 @@
+{
+  "incident": {
+    "deepseek-v4.1-flash single": {
+      "runs": 10,
+      "correct": 10,
+      "steps": {
+        "min": 1,
+        "median": 1,
+        "max": 1
+      },
+      "medianInput": 2019,
+      "medianCached": 1984,
+      "medianOutput": 266.5,
+      "medianReasoning": 125.5,
+      "medianVisibleAnswer": 138,
+      "medianBilledPerVisible": 16.8,
+      "costMedian": 0.000357,
+      "costMean": 0.000398,
+      "costMin": 0.000266,
+      "costMax": 0.000926,
+      "costNoCacheMedian": 0.000925,
+      "costNoCacheMean": 0.000923,
+      "reasoningRange": [
+        71,
+        195
+      ],
+      "extraAttempts": 0
+    },
+    "deepseek-v4.1-flash agent": {
+      "runs": 10,
+      "correct": 10,
+      "steps": {
+        "min": 2,
+        "median": 2,
+        "max": 2
+      },
+      "medianInput": 3216,
+      "medianCached": 1152,
+      "medianOutput": 464.5,
+      "medianReasoning": 146,
+      "medianVisibleAnswer": 162,
+      "medianBilledPerVisible": 22.6,
+      "costMedian": 0.001187,
+      "costMean": 0.001187,
+      "costMin": 0.001071,
+      "costMax": 0.001302,
+      "costNoCacheMedian": 0.001518,
+      "costNoCacheMean": 0.001512,
+      "reasoningRange": [
+        75,
+        176
+      ],
+      "extraAttempts": 0
+    },
+    "kimi-k2.6 single": {
+      "runs": 10,
+      "correct": 10,
+      "steps": {
+        "min": 1,
+        "median": 1,
+        "max": 1
+      },
+      "medianInput": 1893,
+      "medianCached": 1888,
+      "medianOutput": 1023.5,
+      "medianReasoning": 927.5,
+      "medianVisibleAnswer": 102,
+      "medianBilledPerVisible": 30.6,
+      "costMedian": 0.004851,
+      "costMean": 0.005262,
+      "costMin": 0.003023,
+      "costMax": 0.00741,
+      "costNoCacheMedian": 0.005892,
+      "costNoCacheMean": 0.00641,
+      "reasoningRange": [
+        551,
+        1652
+      ],
+      "extraAttempts": 0
+    },
+    "kimi-k2.6 agent": {
+      "runs": 10,
+      "correct": 10,
+      "steps": {
+        "min": 2,
+        "median": 2,
+        "max": 3
+      },
+      "medianInput": 2420,
+      "medianCached": 608,
+      "medianOutput": 782.5,
+      "medianReasoning": 621.5,
+      "medianVisibleAnswer": 83.5,
+      "medianBilledPerVisible": 39.8,
+      "costMedian": 0.004438,
+      "costMean": 0.005004,
+      "costMin": 0.003269,
+      "costMax": 0.008453,
+      "costNoCacheMedian": 0.005871,
+      "costNoCacheMean": 0.005617,
+      "reasoningRange": [
+        227,
+        1506
+      ],
+      "extraAttempts": 0
+    }
+  },
+  "classifier": {
+    "deepseek default": {
+      "runs": 20,
+      "medianInput": 73,
+      "medianOutput": 188.5,
+      "medianReasoning": 184.5,
+      "maxOutput": 1787,
+      "medianVisible": 4,
+      "costPer1000": 0.4802,
+      "agreesWithDefault": 20,
+      "labels": {
+        "ticket": 14,
+        "page": 4,
+        "ignore": 2
+      }
+    },
+    "kimi effort=none": {
+      "runs": 20,
+      "medianInput": 54,
+      "medianOutput": 2,
+      "medianReasoning": 0,
+      "maxOutput": 2,
+      "medianVisible": 2,
+      "costPer1000": 0.0381,
+      "agreesWithDefault": 14,
+      "labels": {
+        "page": 10,
+        "ticket": 9,
+        "ignore": 1
+      }
+    },
+    "deepseek effort=low": {
+      "runs": 20,
+      "medianInput": 73,
+      "medianOutput": 111,
+      "medianReasoning": 107.5,
+      "maxOutput": 1142,
+      "medianVisible": 4,
+      "costPer1000": 0.2671,
+      "agreesWithDefault": 18,
+      "labels": {
+        "ticket": 12,
+        "page": 6,
+        "ignore": 2
+      }
+    },
+    "kimi default": {
+      "runs": 20,
+      "medianInput": 53,
+      "medianOutput": 569.5,
+      "medianReasoning": 566.5,
+      "maxOutput": 1593,
+      "medianVisible": 3,
+      "costPer1000": 2.4195,
+      "agreesWithDefault": 20,
+      "labels": {
+        "ticket": 11,
+        "page": 6,
+        "ignore": 3
+      }
+    }
+  },
+  "summary": {
+    "runs": 10,
+    "medianInput": 568,
+    "medianCached": 512,
+    "medianOutput": 378,
+    "medianReasoning": 256.5,
+    "medianVisible": 118,
+    "costMedian": 0.000473
+  },
+  "ledger": {
+    "rows": 151,
+    "byFeature": {
+      "incident-assistant-single": {
+        "calls": 20,
+        "costUsd": 0.056601,
+        "inputTokens": 39120,
+        "outputTokens": 14173,
+        "reasoningTokens": 11831
+      },
+      "incident-assistant": {
+        "calls": 41,
+        "costUsd": 0.06191,
+        "inputTokens": 57233,
+        "outputTokens": 12651,
+        "reasoningTokens": 7948
+      },
+      "alert-classifier": {
+        "calls": 80,
+        "costUsd": 0.064099,
+        "inputTokens": 5110,
+        "outputTokens": 23746,
+        "reasoningTokens": 23500
+      },
+      "ticket-summary": {
+        "calls": 10,
+        "costUsd": 0.005282,
+        "inputTokens": 5680,
+        "outputTokens": 4111,
+        "reasoningTokens": 2958
+      }
+    },
+    "byTenant": {
+      "tenant-a": {
+        "calls": 76,
+        "costUsd": 0.098075,
+        "inputTokens": 54042,
+        "outputTokens": 28320,
+        "reasoningTokens": 24136
+      },
+      "tenant-b": {
+        "calls": 75,
+        "costUsd": 0.089817,
+        "inputTokens": 53101,
+        "outputTokens": 26361,
+        "reasoningTokens": 22101
+      }
+    },
+    "byModel": {
+      "deepseek-v4.1-flash": {
+        "calls": 80,
+        "costUsd": 0.036077,
+        "inputTokens": 60924,
+        "outputTokens": 23065,
+        "reasoningTokens": 17276
+      },
+      "kimi-k2.6": {
+        "calls": 71,
+        "costUsd": 0.151816,
+        "inputTokens": 46219,
+        "outputTokens": 31616,
+        "reasoningTokens": 28961
+      }
+    },
+    "totalCostUsd": 0.187893
+  },
+  "headline": {
+    "deepseek-v4.1-flash": {
+      "agentOverSingleNoCacheMedian": 1.641,
+      "agentOverSingleAsBilledMedian": 3.325,
+      "classifierMeanOverAgentMean": 0.405,
+      "classifierMeanOverAgentNoCacheMean": 0.318
+    },
+    "kimi-k2.6": {
+      "agentOverSingleNoCacheMedian": 0.996,
+      "agentOverSingleAsBilledMedian": 0.915,
+      "classifierMeanOverAgentMean": 0.484,
+      "classifierMeanOverAgentNoCacheMean": 0.431
+    },
+    "kimiEffortNoneSaving": 63.504,
+    "deepseekEffortLowSaving": 1.798
+  }
+}

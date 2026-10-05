@@ -1,0 +1,28 @@
+{
+  "source": "https://docs.digitalocean.com/products/inference/details/pricing/",
+  "fetched": "2026-10-05",
+  "unit": "USD per 1M tokens, Standard processing mode",
+  "models": {
+    "deepseek-v4.1-flash": {
+      "input": 0.3,
+      "output": 1.2,
+      "cachedInput": 0.006
+    },
+    "kimi-k2.6": {
+      "input": 0.95,
+      "output": 4.0,
+      "cachedInput": 0.19
+    },
+    "glm-5.3-flash": {
+      "input": 0.15,
+      "output": 0.5,
+      "cachedInput": 0.03
+    },
+    "openai-gpt-oss-120b": {
+      "input": 0.1,
+      "output": 0.7,
+      "cachedInput": null
+    }
+  },
+  "note": "OpenAI GPT-5 family is listed on the page but returned 403 'not available for your subscription tier' for our key on 2026-10-05."
+}

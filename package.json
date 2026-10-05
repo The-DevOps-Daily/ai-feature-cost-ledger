@@ -1,0 +1,17 @@
+{
+  "name": "ai-feature-cost-ledger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Measure what one request to an AI feature really bills, and attribute model spend per feature and tenant with OpenTelemetry GenAI attribute names.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "probe": "node scripts/00-effort-probe.mjs",
+    "incident": "node scripts/01-incident.mjs",
+    "features": "node scripts/02-features.mjs",
+    "report": "node scripts/03-report.mjs"
+  },
+  "license": "MIT"
+}
